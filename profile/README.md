@@ -18,18 +18,6 @@
 
 ---
 
-### Quick Install
-
-```bash
-curl -sSfL rustledger.github.io/i | sh
-```
-
-Or with Cargo:
-
-```bash
-cargo install rustledger
-```
-
 ### Packages
 
 | Package | Description |
