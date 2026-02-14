@@ -18,13 +18,33 @@
 
 ---
 
+**rustledger** is a high-performance Rust implementation of [Beancount](https://beancount.github.io/), the double-entry bookkeeping language. It provides 10-30x faster parsing and validation while maintaining full compatibility with Beancount syntax.
+
 ### Packages
 
 | Package | Description |
 |---------|-------------|
-| [rustledger](https://crates.io/crates/rustledger) | CLI tools (`bean-check`, `bean-query`, `bean-format`, etc.) |
+| [rustledger](https://crates.io/crates/rustledger) | CLI toolkit (`rledger check`, `rledger query`, `rledger format`, etc.) |
+| [rustfava](https://github.com/rustledger/rustfava) | Web interface for rustledger (Fava-compatible) |
 | [@rustledger/wasm](https://www.npmjs.com/package/@rustledger/wasm) | WebAssembly bindings for browser & Node.js |
 | [@rustledger/mcp-server](https://www.npmjs.com/package/@rustledger/mcp-server) | MCP server for AI assistants |
+| [Docker](https://ghcr.io/rustledger/rustledger) | Container image with CLI tools |
+
+### Installation
+
+```bash
+# Cargo (Rust)
+cargo install rustledger
+
+# Homebrew (macOS/Linux)
+brew install rustledger/rustledger/rledger
+
+# npm (Node.js/WASM)
+npm install @rustledger/wasm
+
+# Docker
+docker run ghcr.io/rustledger/rustledger rledger check ledger.beancount
+```
 
 ### Try It
 
